@@ -3,6 +3,9 @@
 It is said there are more pytest plugins that aim to provide convenient access
 to packaged data files than grains of sand on Earth. Here I compare them all.
 
+*Did I miss one? Feel free to
+[open an issue](https://github.com/smheidrich/comparison-of-pytest-data-file-access-plugins/issues/new)!*
+
 ## Do I even need a plugin for this?
 
 No.
