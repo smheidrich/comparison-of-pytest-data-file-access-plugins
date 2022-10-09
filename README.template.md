@@ -20,10 +20,10 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
       <a href="{{ plugin.pypi_url }}">{{ plugin.name }}</a>
     </td>
     <td>
-      {% if plugin.supports_copying_to_temp %}✅{% else %}❌{% endif %}
+      {% if plugin.supports_copying_to_temp %}✔{% else %}❌{% endif %}
     </td>
     <td>
-      {% if plugin.supports_access_without_copying %}✅{% else %}❌{% endif %}
+      {% if plugin.supports_access_without_copying %}✔{% else %}❌{% endif %}
     </td>
     <td>
       {{ plugin.provided_as }}

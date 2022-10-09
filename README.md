@@ -19,7 +19,7 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
       <a href="https://pypi.org/project/pytest-datadir/">pytest-datadir</a>
     </td>
     <td>
-      ✅
+      ✔
     </td>
     <td>
       ❌
@@ -39,10 +39,10 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
       <a href="https://pypi.org/project/pytest-datadir-ng/">pytest-datadir-ng</a>
     </td>
     <td>
-      ✅
+      ✔
     </td>
     <td>
-      ✅
+      ✔
     </td>
     <td>
       py.path
@@ -62,7 +62,7 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
       ❌
     </td>
     <td>
-      ✅
+      ✔
     </td>
     <td>
       pathlib.Path
