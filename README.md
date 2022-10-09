@@ -16,7 +16,9 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
   </tr>
   <tr>
     <td>
-      <a href="https://pypi.org/project/pytest-datadir/">pytest-datadir</a>
+      <a href="https://pypi.org/project/pytest-datadir/">
+        pytest-datadir
+      </a>
     </td>
     <td>
       ✔
@@ -28,15 +30,23 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
       pathlib.Path
     </td>
     <td>
-      `datadir`, `shared_datadir`
+      <ul>
+        <li><code>datadir</code></li>
+        <li><code>shared_datadir</code></li>
+      </ul>
     </td>
     <td>
-      `data`, `test_TEST_NAME`
+      <ul>
+        <li><code>data</code></li>
+        <li><code>test_TEST_NAME</code></li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="https://pypi.org/project/pytest-datadir-ng/">pytest-datadir-ng</a>
+      <a href="https://pypi.org/project/pytest-datadir-ng/">
+        pytest-datadir-ng
+      </a>
     </td>
     <td>
       ✔
@@ -48,15 +58,24 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
       py.path
     </td>
     <td>
-      `datadir`, `datadir_copy`
+      <ul>
+        <li><code>datadir</code></li>
+        <li><code>datadir_copy</code></li>
+      </ul>
     </td>
     <td>
-      `data`, `data/test_TEST_NAME`, `test_TEST_NAME`
+      <ul>
+        <li><code>data</code></li>
+        <li><code>data/test_TEST_NAME</code></li>
+        <li><code>test_TEST_NAME</code></li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="https://pypi.org/project/pytest-datafixtures/">pytest-datafixtures</a>
+      <a href="https://pypi.org/project/pytest-datafixtures/">
+        pytest-datafixtures
+      </a>
     </td>
     <td>
       ❌
@@ -68,10 +87,18 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
       pathlib.Path
     </td>
     <td>
-      `datafix`, `datafix_dir`, `datafix_read`, `datafix_readbin`
+      <ul>
+        <li><code>datafix</code></li>
+        <li><code>datafix_dir</code></li>
+        <li><code>datafix_read</code></li>
+        <li><code>datafix_readbin</code></li>
+      </ul>
     </td>
     <td>
-      `datafixtures`, `**/datafixtures`
+      <ul>
+        <li><code>datafixtures</code></li>
+        <li><code>**/datafixtures</code></li>
+      </ul>
     </td>
   </tr>
 </table>

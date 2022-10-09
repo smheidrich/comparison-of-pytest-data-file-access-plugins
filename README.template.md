@@ -17,7 +17,9 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
   {%- for plugin in plugins %}
   <tr>
     <td>
-      <a href="{{ plugin.pypi_url }}">{{ plugin.name }}</a>
+      <a href="{{ plugin.pypi_url }}">
+        {{ plugin.name }}
+      </a>
     </td>
     <td>
       {% if plugin.supports_copying_to_temp %}✔{% else %}❌{% endif %}
@@ -29,10 +31,18 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
       {{ plugin.provided_as }}
     </td>
     <td>
-      {{ plugin.fixture_names|map('tojson')|join(', ')|replace('"', '`') }}
+      <ul>
+      {%- for fixture_name in plugin.fixture_names %}
+        <li><code>{{ fixture_name }}</code></li>
+      {%- endfor %}
+      </ul>
     </td>
     <td>
-      {{ plugin.folder_names|map('tojson')|join(', ')|replace('"', '`') }}
+      <ul>
+      {%- for folder_name in plugin.folder_names %}
+        <li><code>{{ folder_name }}</code></li>
+      {%- endfor %}
+      </ul>
     </td>
   </tr>
   {%- endfor %}
