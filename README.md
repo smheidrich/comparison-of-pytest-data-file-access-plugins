@@ -73,3 +73,25 @@ pathlib.Path
 </td>
 </tr>
 </table>
+
+
+## Excluded
+
+These plugins have names that might suggest they'd do something similar, but
+have slightly different aims than just providing convenient access to packaged
+data files:
+
+- [pytest-datadir-mgr](https://pypi.org/project/pytest-datadir-mgr/):
+  More about downloading, caching etc. than just providing convenient access to
+  packaged data files.
+- [pytest-data-file](https://pypi.org/project/pytest-data-file/):
+  More about loading data from files than just providing raw access.
+- [pytest-datafiles](https://pypi.org/project/pytest-datafiles/):
+  Doesn't provide much in the way of simplifying access to packaged files. More
+  focused on the copy-to-temp aspect.
+- [pytest-data-from-files](https://pypi.org/project/pytest-data-from-files/):
+  Like pytest-data-file, more about implicitly loading test data from files
+  than giving access to those files.
+- [pytest-filedata](https://pypi.org/project/pytest-filedata/):
+  Also more about parametrizing tests with data from files.
+

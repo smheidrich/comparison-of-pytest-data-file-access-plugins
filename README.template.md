@@ -37,3 +37,16 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
 {%- endfor %}
 </tr>
 </table>
+
+
+## Excluded
+
+These plugins have names that might suggest they'd do something similar, but
+have slightly different aims than just providing convenient access to packaged
+data files:
+
+{% for plugin in excluded_plugins -%}
+- [{{ plugin.name }}]({{ plugin.pypi_url }}):
+  {{ plugin.reason|wordwrap(77)|indent(2) }}
+{% endfor %}
+
