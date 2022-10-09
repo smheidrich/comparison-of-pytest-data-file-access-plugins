@@ -6,28 +6,6 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
 *Did I miss one? Feel free to
 [open an issue](https://github.com/smheidrich/comparison-of-pytest-data-file-access-plugins/issues/new)!*
 
-## Do I even need a plugin for this?
-
-No.
-
-If you're only interested in files and not directories, in Python 3.7+ you
-can use the functions provided by
-[`importlib.resources`](https://docs.python.org/3/library/importlib.html#module-importlib.resources).
-
-The "older" method is to use
-[`pkg_resources`'s `ResourceManager`
-API](https://setuptools.pypa.io/en/latest/pkg_resources.html#resourcemanager-api)
-(part of setuptools) which is discouraged but has the advantage that it also
-allows you to access entire directories.
-
-The only purpose of these plugins, at least as far as this comparison is
-concerned, is to get rid of the boilerplate for you.
-
-## Other things to note
-
-No matter which method or plugin you choose, all of them will have to extract
-data files if your package is stored in an archived form (e.g. egg or wheel).
-To avoid this, specify `zip_safe=False` in your package configuration.
 
 ## Comparison
 
@@ -85,4 +63,29 @@ data files:
 - [{{ plugin.name }}]({{ plugin.pypi_url }}):
   {{ plugin.reason|wordwrap(77)|indent(2) }}
 {% endfor %}
+
+
+## Do I even need a plugin for this?
+
+No.
+
+If you're only interested in files and not directories, in Python 3.7+ you
+can use the functions provided by
+[`importlib.resources`](https://docs.python.org/3/library/importlib.html#module-importlib.resources).
+
+The "older" method is to use
+[`pkg_resources`'s `ResourceManager`
+API](https://setuptools.pypa.io/en/latest/pkg_resources.html#resourcemanager-api)
+(part of setuptools) which is discouraged but has the advantage that it also
+allows you to access entire directories.
+
+The only purpose of these plugins, at least as far as this comparison is
+concerned, is to get rid of the boilerplate for you.
+
+
+## Other things to note
+
+No matter which method or plugin you choose, all of them will have to extract
+data files if your package is stored in an archived form (e.g. egg or wheel).
+To avoid this, specify `zip_safe=False` in your package configuration.
 
