@@ -9,7 +9,7 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
   <tr>
     <th>Name / URL</th>
     <th>Supports copying to temp dir</th>
-    <th>Supports accessing without copying</th>
+    <th>Supports access without copying</th>
     <th>Paths provided as</th>
     <th>Fixture names</th>
     <th>Folder names</th>
