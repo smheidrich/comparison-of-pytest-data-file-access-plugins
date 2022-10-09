@@ -6,14 +6,14 @@ to packaged data files than grains of sand on Earth. Here I compare them all.
 ## Comparison
 
 <table>
-<th>
-<td>Name / URL</td>
-<td>Supports copying to temp dir</td>
-<td>Supports accessing without copying</td>
-<td>Paths provided as</td>
-<td>Fixture names</td>
-<td>Folder names</td>
-</th>
+<tr>
+<th>Name / URL</th>
+<th>Supports copying to temp dir</th>
+<th>Supports accessing without copying</th>
+<th>Paths provided as</th>
+<th>Fixture names</th>
+<th>Folder names</th>
+</tr>
 {%- for plugin in plugins %}
 <tr>
 <td>
