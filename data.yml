@@ -1,0 +1,61 @@
+plugins:
+  - name: pytest-datadir
+    pypi_url: https://pypi.org/project/pytest-datadir/
+    supports_copying_to_temp: true
+    supports_access_without_copying: false
+    provided_as: pathlib.Path
+    fixture_names:
+      - datadir
+      - shared_datadir
+    folder_names:
+      - data
+      - test_TEST_NAME
+  - name: pytest-datadir-ng
+    pypi_url: https://pypi.org/project/pytest-datadir-ng/
+    supports_copying_to_temp: true
+    supports_access_without_copying: true
+    provided_as: py.path
+    fixture_names:
+      - datadir
+      - datadir_copy
+    folder_names:
+      - data
+      - data/test_TEST_NAME
+      - test_TEST_NAME
+  - name: pytest-datafixtures
+    pypi_url: https://pypi.org/project/pytest-datafixtures/
+    supports_copying_to_temp: false
+    supports_access_without_copying: true
+    provided_as: pathlib.Path
+    fixture_names:
+      - datafix
+      - datafix_dir
+      - datafix_read
+      - datafix_readbin
+    folder_names:
+      - datafixtures
+      - '**/datafixtures'
+excluded_plugins:
+  - name: pytest-datadir-mgr
+    pypi_url: https://pypi.org/project/pytest-datadir-mgr/
+    reason: >
+      More about downloading, caching etc. than just providing convenient
+      access to packaged data files.
+  - name: pytest-data-file
+    pypi_url: https://pypi.org/project/pytest-data-file/
+    reason: >
+      More about loading data from files than just providing raw access.
+  - name: pytest-datafiles
+    pypi_url: https://pypi.org/project/pytest-datafiles/
+    reason: >
+      Doesn't provide much in the way of simplifying access to packaged files.
+      More focused on the copy-to-temp aspect.
+  - name: pytest-data-from-files
+    pypi_url: https://pypi.org/project/pytest-data-from-files/
+    reason: >
+      Like pytest-data-file, more about implicitly loading test data from files
+      than giving access to those files.
+  - name: pytest-filedata
+    pypi_url: https://pypi.org/project/pytest-filedata/
+    reason: >
+      Also more about parametrizing tests with data from files.
